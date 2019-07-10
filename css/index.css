@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+
+:root {
+   --main-color: black;
+   font-family:'DM Serif Text', serif;
+   scroll behavior= smooth;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+    background-color: #F8F9F9
+}
+
+h1, h2, h3, h4, h5, h6, header, main, footer, nav, p {
+    margin: 0;
+    padding: 0;
+}
+
+.top-header .logo {
+    font-family: 'DM Serif Text', serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.top-header .top-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex: 1;
+}
+
+.top-header .top-menu li {
+    list-style-type: none;
+}
+
+.top-header .top-menu li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 2px;
+    color: var(--main-color);
+}
+
+.top-header .top-menu li a:hover {
+    border: 1px solid var(--main-color);
+}
+
+@media (min-width: 600px) {
+    .top-header nav {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.top-header .jumbotron {
+    background-image: url(../img/travel.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+@media (min-width: 600px) {
+    .top-header .jumbotron {
+        min-height: 500px;
+    }
+}
+
+
+.Button {
+  background: 4px solid white;
+  border: none;
+  display: inline-block;
+  height: var(--button-height);
+  overflow: hidden;
+  padding: 0 40px;
+  position: relative;
+}
+
+.Button,
+svg {
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.product-list .product-card {
+    border: 1px solid var(--main-color);
+    padding: 2px;
+}
+
+.product-list .product-card img {
+    width: 100%;
+    display: block;
+}
+
+.product-list .product-card .button-container {
+    display: flex;
+    justify-content:space-around;
+}
+
+.button-container {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.card-button {
+    padding: 3px 20px;
+}
+
+@media (min-width: 640px) {
+    .product-list {
+     display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 2px;
+    }
+}
